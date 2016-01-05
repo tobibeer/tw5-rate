@@ -2,7 +2,7 @@ title: $:/plugins/tobibeer/rate/macro
 tags: $:/tags/Macro
 
 \define rate-button(selected)
-<$button class="tc-btn-invisible tc-rate $selected$ tc-rating-$(rating)$"><$action-setfield $field=<<rating-field>> $value=<<rating>>/><<symbol>></$button>
+<$button class="tc-btn-invisible tc-rate tc-rating-$(rating)$ $selected$"><$action-setfield $field=<<rating-field>> $value=<<rating>>/><<symbol>></$button>
 \end
 
 \define rate(symbol:"★",class:"tc-rating",values:"1 2 3 4 5",reset:"after:-",field:"rating")

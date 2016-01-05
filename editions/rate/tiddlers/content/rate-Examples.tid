@@ -1,8 +1,7 @@
-created: 20160105132326004
+created: 20160105145239207
 creator: Tobias Beer
-modified: 20160105132801778
+modified: 20160105145241523
 modifier: Tobias Beer
-rating: 3
 title: rate-Examples
 type: text/vnd.tiddlywiki
 
@@ -53,5 +52,11 @@ type: text/vnd.tiddlywiki
 !! Custom Field
 
 <$macrocall $name="`" text="""<<rate field:"movie-rating">> => movie-rating = {{!!movie-rating}}"""/>
+
+!! Danger Zone
+
+// Stores the rating in the field `danger` using the [[classes|rate-Styles]] `light` and [[alert|$:/.tb/styles/rating]]: //
+
+<$macrocall $name="`" text="""<<rate ⚡ field:"danger" class:"tc-rating light alert">> => danger: {{!!danger}}"""/>
 
 </$tiddler>

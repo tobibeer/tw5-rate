@@ -28,6 +28,12 @@ tags: $:/tags/Stylesheet
 .tc-rating .tc-selected ~ .tc-rate {
 	color: orange;
 }
+
+.tc-rating-template {
+	position:absolute;
+	right:48px;
+}
+
 .tc-rating .tc-rating-reset {
 	color: #ccc;
 	opacity:.25;
@@ -37,6 +43,7 @@ tags: $:/tags/Stylesheet
 	color: #999;
 	opacity:1 !important;
 }
+
 .tc-rating.light .tc-rating-1 {
 	opacity:0.4 !important;
 }
@@ -48,8 +55,4 @@ tags: $:/tags/Stylesheet
 }
 .tc-rating.light .tc-rating-4 {
 	opacity:0.85;
-}
-.tc-rating-template {
-	position:absolute;
-	right:48px;
 }

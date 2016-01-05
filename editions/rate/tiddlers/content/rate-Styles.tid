@@ -1,6 +1,6 @@
 created: 20160105134806091
 creator: Tobias Beer
-modified: 20160105135824463
+modified: 20160105145120138
 modifier: Tobias Beer
 tags: 
 title: rate-Styles
@@ -22,6 +22,8 @@ The ''rate'' macro uses the following css classes:
 : the button to remove ratings
 ; tc-rating-template
 : the div wrapping the ratings view-template
+; light
+: a class in addition to `tc-rating` for an opacity effect, see [[examples|rate-Examples]]
 
 The default styles are defined in:
 
