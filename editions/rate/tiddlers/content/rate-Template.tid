@@ -1,7 +1,7 @@
 created: 20160105133835892
 creator: Tobias Beer
 danger: 5
-modified: 20160105172016751
+modified: 20160105190611735
 modifier: Tobias Beer
 rating: 5
 tags: 
@@ -12,4 +12,10 @@ The following view-template provided with [[tobibeer/rate|rate]] shows ratings f
 
 <<source "$:/plugins/tobibeer/rate/template">>
 
-To restrict the tiddlers for which the [[template|rate-Template]] is displayed, modify the <<x Filters filter>> defined in <<source "$:/plugins/tobibeer/rate/config/filter">>
+To restrict the tiddlers for which the [[template|rate-Template]] is displayed, modify the <<x Filters filter>> defined in $:/plugins/tobibeer/rate/config/filter:
+
+<pre><$view tiddler="$:/plugins/tobibeer/rate" subtiddler="$:/plugins/tobibeer/rate/config/filter"/></pre>
+
+Here's how that tiddler is defined in this wiki so that it is only shown for tiddlers documenting this plugin:
+
+<pre>{{$:/plugins/tobibeer/rate/config/filter}}</pre>
