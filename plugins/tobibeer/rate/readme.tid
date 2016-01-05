@@ -1,0 +1,27 @@
+title: $:/plugins/tobibeer/rate/readme
+
+The plugin $:/plugins/tobibeer/rate provides:
+
+; &lt;&lt;rate>>
+: a macro to rate tiddlers
+
+!! Parameters
+
+; symbol
+: rating symbol: `★`
+; class
+: wrapper class: `tc-rating light`
+; values
+: rating values: `1 2 3 4 5`
+; reset
+: button to remove rating: `after:<label>` / `before:<label>` / `none`
+
+! Config
+
+; view-template filter
+: adjust $:/plugins/tobibeer/rate/config/filter
+
+<br>
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#rate

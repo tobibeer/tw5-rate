@@ -1,0 +1,13 @@
+created: 20160105133835892
+creator: Tobias Beer
+modified: 20160105134908504
+modifier: Tobias Beer
+tags: 
+title: rate-Template
+type: text/vnd.tiddlywiki
+
+The following template provided with [[tobibeer/rate|rate]] adds ratings to the view-template:
+
+<<source "$:/plugins/tobibeer/rate/template">>
+
+To restrict the tiddlers for which the [[template|rate-Template]] is displayed, modify the filter defined in <<source "$:/plugins/tobibeer/rate/config/filter">>

@@ -1,0 +1,23 @@
+title: $:/plugins/tobibeer/rate/macro
+tags: $:/tags/Macro
+
+\define rate-button(selected)
+<$button class="tc-btn-invisible tc-rate $selected$ tc-rating-$(rating)$"><$action-setfield $field=<<rating-field>> $value=<<rating>>/><<symbol>></$button>
+\end
+
+\define rate(symbol:"★",class:"tc-rating",values:"1 2 3 4 5",reset:"after:-",field:"rating")
+<$vars symbol="""$symbol$""" rating-field="""$field$""">
+<div class="$class$">
+<$list filter="[[$reset$]removeprefix[after:]]" variable="reset"><$list filter="[all[current]has[$field$]]"><$button class="tc-btn-invisible tc-rating-reset"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list>
+<$list filter="""$values$ +[reverse[]]""" variable="rating">
+<$list filter="[all[current]$field$<rating>]">
+<<rate-button tc-selected>>
+</$list>
+<$list filter="[all[current]!$field$<rating>]">
+<<rate-button>>
+</$list>
+</$list>
+<$list filter="[[$reset$]removeprefix[before:]]" variable="reset"><$list filter="[all[current]has[$field$]]"><$button class="tc-btn-invisible tc-rating-reset"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list>
+</div>
+</$vars>
+\end

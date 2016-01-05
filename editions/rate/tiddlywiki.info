@@ -1,0 +1,21 @@
+{
+    "description": "tobibeer/rate plugin",
+    "plugins": [
+        "tiddlywiki/tiddlyweb",
+        "tiddlywiki/filesystem",
+        "tobibeer/rate"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla",
+        "tiddlywiki/snowwhite"
+    ],
+    "includeWikis": [
+        "../../../defaults/editions/defaults"
+    ],
+    "build": {
+        "index": [
+            "--output","../../",
+            "--rendertiddler","$:/plugins/tiddlywiki/tiddlyweb/save/offline","index.html","text/plain"
+        ]
+    }
+}

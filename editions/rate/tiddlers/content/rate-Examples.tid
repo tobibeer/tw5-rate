@@ -1,0 +1,57 @@
+created: 20160105132326004
+creator: Tobias Beer
+modified: 20160105132801778
+modifier: Tobias Beer
+rating: 3
+title: rate-Examples
+type: text/vnd.tiddlywiki
+
+<$tiddler tiddler="rate-Info">
+
+// To avoid refreshing, all the below examples are applied to the tiddler [[rate-Info]]://
+
+@@.note
+''Tip:'' Notice the dim remove button @@color:#ccc; -@@ after the ratings to reset ratings.
+@@
+
+!! Simple Rating
+
+<$macrocall $name="`" text="""<<rate>> => rating = {{!!rating}}"""/>
+
+!! Rate Another Tiddler
+
+// use the <<x TiddlerWidget>>://
+
+<$macrocall $name="`" text="""<$tiddler tiddler="rate"><<rate>></$tiddler>"""/>
+
+!! Custom Symbol
+
+<$macrocall $name="`" text="""<<rate symbol:"✧">>"""/>
+
+!! Custom Class
+
+// The `light` class comes shipped with the plugin, see [[styles|rate-Styles]]: //
+
+<$macrocall $name="`" text="""<<rate class:"tc-rating light">>"""/>
+
+!! Custom Values
+
+<$macrocall $name="`" text="""<<rate values:"1 2 3 4 5 6 7 8 9 10">>"""/>
+
+!! Custom Reset
+
+<$macrocall $name="`" text="""<<rate reset:"before:Ø">>"""/>
+
+!! Custom Reset After
+
+<$macrocall $name="`" text="""<<rate reset:"after:Ø">>"""/>
+
+!! No Reset
+
+<$macrocall $name="`" text="""<<rate reset:none>>"""/>
+
+!! Custom Field
+
+<$macrocall $name="`" text="""<<rate field:"movie-rating">> => movie-rating = {{!!movie-rating}}"""/>
+
+</$tiddler>

@@ -1,0 +1,9 @@
+title: $:/plugins/tobibeer/rate/template
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/subtitle
+
+<$list filter={{$:/plugins/tobibeer/rate/config/filter}}>
+<div class="tc-rating-template">
+<<rate reset:"before:-">>
+</div>
+</$list>

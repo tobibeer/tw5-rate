@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/tobibeer/rate",
+    "description": "A macro to rate tiddlers",
+    "author": "Tobias Beer",
+    "version": "0.5.0",
+    "core-version": ">=5.1.9",
+    "source": "https://github.com/tobibeer/tw5-rate",
+    "documentation": "https://tobibeer.github.io/tw5-rate",
+    "plugin-type": "plugin",
+	"requires": "",
+	"list": "readme"
+}

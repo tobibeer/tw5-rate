@@ -1,0 +1,16 @@
+created: 20160105135647565
+creator: Tobias Beer
+modified: 20160105135648616
+modifier: Tobias Beer
+movie-rating: 5
+title: rate-Info
+type: text/vnd.tiddlywiki
+
+The plugin $:/plugins/tobibeer/rate provides:
+
+; &lt;&lt;rate>>
+: a macro to rate tiddlers
+: stores the rating as a value
+:: by default as the numbers: `1`, `2`, `3`, `4`, `5`
+
+<<plugin-docs-cp rate>>

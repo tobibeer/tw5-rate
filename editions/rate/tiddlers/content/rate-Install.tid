@@ -1,0 +1,13 @@
+created: 20160105130315045
+creator: Tobias Beer
+modified: 20160105130537336
+modifier: Tobias Beer
+title: rate-Install
+type: text/vnd.tiddlywiki
+
+<<plugin-install rate>>
+
+!! Version History
+
+; 0.5.0 / 2016-01-05
+: initial version
