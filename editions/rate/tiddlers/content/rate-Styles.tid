@@ -1,6 +1,6 @@
 created: 20160105134806091
 creator: Tobias Beer
-modified: 20160105160240602
+modified: 20160105204121462
 modifier: Tobias Beer
 rating: 4
 tags: 
@@ -19,7 +19,7 @@ The ''rate'' macro uses the following css classes:
 : each rating button, e.g.: `tc-rating-5`
 : allows to style individual ratings differently
 :: see `light` class in styles below
-; tc-rating-reset
+; tc-reset-rating
 : the button to remove ratings
 ; tc-rating-template
 : the div wrapping the ratings view-template

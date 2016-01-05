@@ -59,7 +59,7 @@ readOnly:"tc-rate"
 )
 <$vars symbol="""$symbol$""" rating-field="""$field$""">
 <div class="$class$">
-<$list filter="[all[current]has[$field$]]"><$list filter="[[$reset$]removeprefix[after:]]" variable="reset"><$list filter="[[$readOnly$]prefix[tc-rate]]" variable="none"><$button class="tc-btn-invisible tc-rating-reset"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list></$list>
+<$list filter="[all[current]has[$field$]]"><$list filter="[[$reset$]removeprefix[after:]]" variable="reset"><$list filter="[[$readOnly$]prefix[tc-rate]]" variable="none"><$button class="tc-btn-invisible tc-reset-rating"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list></$list>
 <$list filter="""$values$ +[reverse[]]""" variable="rating">
 <$list filter="[all[current]$field$<rating>]">
 <<rate-button tc-selected "$readOnly$">>
@@ -68,7 +68,7 @@ readOnly:"tc-rate"
 <<rate-button "" "$readOnly$">>
 </$list>
 </$list>
-<$list filter="[all[current]has[$field$]]"><$list filter="[[$reset$]removeprefix[before:]]" variable="reset"><$list filter="[[$readOnly$]prefix[tc-rate]]" variable="none"><$button class="tc-btn-invisible tc-rating-reset"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list></$list>
+<$list filter="[all[current]has[$field$]]"><$list filter="[[$reset$]removeprefix[before:]]" variable="reset"><$list filter="[[$readOnly$]prefix[tc-rate]]" variable="none"><$button class="tc-btn-invisible tc-reset-rating"><$action-deletefield $field="$field$"/><<reset>></$button></$list></$list></$list>
 </div>
 </$vars>
 \end
