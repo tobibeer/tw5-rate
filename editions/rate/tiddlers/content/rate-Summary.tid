@@ -1,0 +1,39 @@
+created: 20160105152454037
+creator: Tobias Beer
+modified: 20160105171905295
+modifier: Tobias Beer
+rating: 5
+tags: 
+title: rate-Summary
+type: text/vnd.tiddlywiki
+
+In addition to the ''rate'' macro, you can use the ''ratings'' macro to show a summary table of all used rating values and tiddlers having them, e.g.:
+
+<$macrocall $name="`" text="""<<ratings>>"""/>
+
+!! Parameters
+
+The following parameters can be used with the ''ratings'' macro:
+
+| !# | !Parameter | !Description | !Default |
+| 1 |''field''|the rating field|`rating`|
+| 2 |''filter''|a filter to constrain or sort listed titles|`[all[]sort[title]]`|
+| 3 |''template''|the template used to display items|`$:/core/ui/ListItemTemplate`|
+| 4 |''values''|the rating values to be indexed|`1 2 3 4 5`|
+| 5 |''all-values''|the full range of available rating values for the field|`1 2 3 4 5`|
+| 6 |''symbol''|the symbol used for the rating<br>&raquo; set to `value` to show the values instead|`★`|
+| 7 |''class''|the class for the ratings wrapper|`tc-ratings`|
+
+!! Examples
+
+''only 5 stars''
+
+<$macrocall $name="`" text="""<<ratings values:"5">>"""/>
+
+''custom template — $:/.tb/demo/rate/template-plain''
+
+<$macrocall $name="`" text="""<<ratings template:"$:/.tb/demo/rate/template-plain">>"""/>
+
+''danger ratings''
+
+<$macrocall $name="`" text="""<<ratings field:"danger" symbol:"⚡" class:"tc-rating light alert">>"""/>

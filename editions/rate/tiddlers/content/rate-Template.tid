@@ -1,12 +1,14 @@
 created: 20160105133835892
 creator: Tobias Beer
-modified: 20160105134908504
+danger: 5
+modified: 20160105172016751
 modifier: Tobias Beer
+rating: 5
 tags: 
 title: rate-Template
 type: text/vnd.tiddlywiki
 
-The following template provided with [[tobibeer/rate|rate]] adds ratings to the view-template:
+The following view-template provided with [[tobibeer/rate|rate]] shows ratings for tiddlers underneath the tiddler toolbar:
 
 <<source "$:/plugins/tobibeer/rate/template">>
 

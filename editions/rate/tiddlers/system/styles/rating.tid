@@ -1,6 +1,6 @@
 created: 20160105144516610
 creator: Tobias Beer
-modified: 20160105144541248
+modified: 20160105162815770
 modifier: Tobias Beer
 tags: $:/tags/Stylesheet
 title: $:/.tb/styles/rating
@@ -10,7 +10,9 @@ type: text/vnd.tiddlywiki
 .tc-rating.alert .tc-rate:hover ~ .tc-rate {
 	color:red;
 }
+
 .tc-rating.alert .tc-selected,
-.tc-rating.alert .tc-selected ~ .tc-rate {
+.tc-rating.alert .tc-selected ~ button[class^="tc-rating-"],
+.tc-rating.alert .tc-selected ~ button[class*=" tc-rating-"] {
 	color:red;
 }

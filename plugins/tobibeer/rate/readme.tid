@@ -4,22 +4,35 @@ The plugin $:/plugins/tobibeer/rate provides:
 
 ; &lt;&lt;rate>>
 : a macro to rate tiddlers
+; Parameters
+: ''symbol'' — rating symbol: `★`
+: ''class'' — wrapper class: `tc-rating light`
+: ''values'' — rating values: `1 2 3 4 5`
+: ''reset'' — button to remove rating: `after:<label>` / `before:<label>` / `none`
+: ''field'' — default: `rating`
+: ''readOnly'' — set to `yes`
 
-!! Parameters
+!! View-Template
 
-; symbol
-: rating symbol: `★`
-; class
-: wrapper class: `tc-rating light`
-; values
-: rating values: `1 2 3 4 5`
-; reset
-: button to remove rating: `after:<label>` / `before:<label>` / `none`
+; Template
+: view-template underneath the toolbar
+: $:/plugins/tobibeer/rate/template
+; Configuration
+: adjust filter to show / hide:
+: $:/plugins/tobibeer/rate/config/filter
 
-! Config
+!! Ratings
 
-; view-template filter
-: adjust $:/plugins/tobibeer/rate/config/filter
+; &lt;&lt;ratings>>
+: a macro to list a summary of rated tiddlers
+; Parameters
+: ''field'': `rating`
+: ''filter'' — constrain or sort titles: `[all[]sort[title]]`
+: ''template'' — item template: `$:/core/ui/ListItemTemplate`
+: ''values'' — indexed ratings: `1 2 3 4 5`
+: ''all-values'' — all rating values for the field: `1 2 3 4 5`
+: ''symbol'' — rating symbol: `★` (set to `value` for values)
+: ''class'' — wrapper class: `tc-ratings`
 
 <br>
 

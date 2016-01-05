@@ -1,6 +1,6 @@
 created: 20160105130315045
 creator: Tobias Beer
-modified: 20160105130537336
+modified: 20160105163528982
 modifier: Tobias Beer
 title: rate-Install
 type: text/vnd.tiddlywiki
@@ -9,5 +9,7 @@ type: text/vnd.tiddlywiki
 
 !! Version History
 
+; 0.6.0 / 2016-01-05
+: added ''ratings'' macro
 ; 0.5.0 / 2016-01-05
 : initial version

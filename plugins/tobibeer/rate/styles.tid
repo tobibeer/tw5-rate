@@ -2,57 +2,61 @@ title: $:/plugins/tobibeer/rate/styles
 tags: $:/tags/Stylesheet
 
 .tc-rating {
-	vertical-align:middle;
+vertical-align:middle;
 }
 .tc-rating,
 .tc-rating .tc-rate{
-	display: inline-block;
+display:inline-block;
 }
 .tc-rating button{
-	float:right;
-	font-size:1.1em;
+cursor:text;
+float:right;
+font-size:1.1em;
+text-align:center;
+color:#ccc;
 }
 .tc-rating .tc-rate{
-	color: #ccc;
-	text-align: center;
+cursor:pointer;
 }
 .tc-rating:hover .tc-rate{
-	opacity: .25;
+opacity:.25;
 }
 .tc-rating .tc-rate:hover,
 .tc-rating .tc-rate:hover ~ .tc-rate{
-	color: orange;
-	opacity: 1;
+color:orange;
+opacity:1;
 }
 .tc-rating .tc-selected,
-.tc-rating .tc-selected ~ .tc-rate {
-	color: orange;
+.tc-rating .tc-selected ~ button[class^="tc-rating-"],
+.tc-rating .tc-selected ~ button[class*=" tc-rating-"]{
+color:orange;
 }
 
 .tc-rating-template {
-	position:absolute;
-	right:48px;
+position:absolute;
+right:48px;
 }
 
 .tc-rating .tc-rating-reset {
-	color: #ccc;
-	opacity:.25;
-	padding:0 5px;
+color:#ccc;
+opacity:.25;
+padding:0 5px;
+cursor:pointer;
 }
 .tc-rating .tc-rating-reset:hover {
-	color: #999;
-	opacity:1 !important;
+color:#999;
+opacity:1 !important;
 }
 
 .tc-rating.light .tc-rating-1 {
-	opacity:0.4 !important;
+opacity:0.4 !important;
 }
 .tc-rating.light .tc-rating-2 {
-	opacity:0.55 !important;
+opacity:0.55 !important;
 }
 .tc-rating.light .tc-rating-3 {
-	opacity:0.7 !important;
+opacity:0.7 !important;
 }
 .tc-rating.light .tc-rating-4 {
-	opacity:0.85;
+opacity:0.85;
 }

@@ -1,6 +1,6 @@
 created: 20160105145239207
 creator: Tobias Beer
-modified: 20160105145241523
+modified: 20160105170556803
 modifier: Tobias Beer
 title: rate-Examples
 type: text/vnd.tiddlywiki
@@ -52,6 +52,10 @@ type: text/vnd.tiddlywiki
 !! Custom Field
 
 <$macrocall $name="`" text="""<<rate field:"movie-rating">> => movie-rating = {{!!movie-rating}}"""/>
+
+!! Read-Only Ratings
+
+<$macrocall $name="`" text="""<<rate readOnly:yes>>"""/>
 
 !! Danger Zone
 

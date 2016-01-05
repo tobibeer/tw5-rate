@@ -1,6 +1,6 @@
 created: 20160105122520332
 creator: Tobias Beer
-modified: 20160105131943988
+modified: 20160105172331653
 modifier: Tobias Beer
 title: rate-Parameters
 type: text/vnd.tiddlywiki
@@ -13,3 +13,4 @@ The ''rate'' macro can be used with the following parameters:
 |3|''values''|the values assigned with each button in reverse|`1 2 3 4 5`|
 |4|''reset''|shows a button to remove a rating as either:<br>&raquo; `after:<label>` — displayed after ratings<br>&raquo; `before:<label>` — displayed before ratings<br>&raquo; `none` — no reset button|`after:-`|
 |5|''field''|the field where the rating is stored|`rating`|
+|6|''readOnly''|makes rating buttons read-only<br>&raquo; set to `yes` for read-only mode|`tc-rate`|
