@@ -10,4 +10,4 @@ The following template provided with [[tobibeer/rate|rate]] adds ratings to the 
 
 <<source "$:/plugins/tobibeer/rate/template">>
 
-To restrict the tiddlers for which the [[template|rate-Template]] is displayed, modify the filter defined in <<source "$:/plugins/tobibeer/rate/config/filter">>
+To restrict the tiddlers for which the [[template|rate-Template]] is displayed, modify the <<x Filters filter>> defined in <<source "$:/plugins/tobibeer/rate/config/filter">>
