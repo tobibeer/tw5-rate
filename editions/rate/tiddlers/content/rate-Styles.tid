@@ -6,7 +6,7 @@ tags:
 title: rate-Styles
 type: text/vnd.tiddlywiki
 
-The css for the ''rate'' macro uses the following css classes:
+The ''rate'' macro uses the following css classes:
 
 ; tc-rating
 : the div wrapping the rating controls
