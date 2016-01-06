@@ -1,7 +1,7 @@
 created: 20160105171811582
 creator: Tobias Beer
 danger: 2
-modified: 20160105171857172
+modified: 20160106141154748
 modifier: Tobias Beer
 movie-rating: 3
 rating: 3
@@ -16,5 +16,7 @@ The plugin $:/plugins/tobibeer/rate provides:
 :: by default as the numbers: `1`, `2`, `3`, `4`, `5`
 ; &lt;&lt;ratings>>
 : a macro displaying a [[rating summary|rate-Summary]] as a table
+; template
+: a [[view-template|rate-Template]] to display tiddler ratings below the tiddler toolbar
 
 <<plugin-docs-cp rate>>
