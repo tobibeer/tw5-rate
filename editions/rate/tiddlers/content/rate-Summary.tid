@@ -1,9 +1,10 @@
 created: 20160105152454037
 creator: Tobias Beer
-modified: 20160105171905295
+modified: 20160107113801137
 modifier: Tobias Beer
 rating: 5
-tags: 
+summary: usage and example for the [[ratings|rate-Summary]] macro
+tags: rate Examples
 title: rate-Summary
 type: text/vnd.tiddlywiki
 
