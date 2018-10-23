@@ -33,6 +33,21 @@ opacity:1;
 color:orange;
 }
 
+.tc-rating img,
+.tc-rating svg
+{
+opacity: .125;
+}
+.tc-rating .tc-selected img,
+.tc-rating .tc-selected ~ button[class^="tc-rating-"] img,
+.tc-rating .tc-selected ~ button[class*="tc-rating-"] img,
+.tc-rating .tc-selected svg,
+.tc-rating .tc-selected ~ button[class^="tc-rating-"] svg,
+.tc-rating .tc-selected ~ button[class*="tc-rating-"] svg
+{
+opacity: 1;
+}
+
 .tc-rating-template {
 position:absolute;
 right:48px;
